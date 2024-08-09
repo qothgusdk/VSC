@@ -11,7 +11,6 @@ driver = webdriver.Chrome(options=chrome_options)
 url = 'https://www.google.co.kr/'
 driver.get(url)
 # driver.maximize_window() #창을 크게 만듬
-action = ActionChains(driver)
 
 driver.find_element(By.CSS_SELECTOR, '.gLFyf').send_keys('파이썬')
 driver.find_element(By.CSS_SELECTOR, '.gLFyf').send_keys(Keys.ENTER)
